@@ -1,0 +1,34 @@
+.we {
+  background: url('./../img/bg/we-bg.png') 50% 50% no-repeat;
+  min-height: 650px;
+  background-size: cover;
+  color: #000;
+  position: relative;
+}
+
+.we:after {
+  content: "";
+  background: url('../../img/bg/berry3.png') center center / cover no-repeat;
+  width: 200px;
+  height: 385px;
+  position: absolute;
+  bottom: -127px;
+}
+
+.title {
+  font-family: 'alegreya_sansbold';
+  font-size: 48px;
+  text-transform: uppercase; 
+  margin-bottom: 25px;
+}
+
+.title__subtitle {
+  font-size: 18px;
+  font-family: 'alegreya_sansregular';
+  margin-bottom: 85px;
+}
+
+.about__picture {
+width: 67px;
+    height: 67px;
+}

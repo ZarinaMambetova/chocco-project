@@ -1,0 +1,34 @@
+.hero {
+  background: url('./../img/bg/hero-bg.png') 50% 50% no-repeat;
+  min-height: 650px;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.hero__container {
+  display: flex;
+
+}
+
+.hero__content-info {
+display: flex;
+flex-direction: column;
+justify-content: center; 
+margin-right: 50px;
+}
+
+
+.hero__content-title--name {
+  font-family: 'alegreya_sansbold';
+  font-size: 60px;
+  text-transform: uppercase; 
+  margin-bottom: 25px;
+}
+
+.hero__content-title--subtitle {
+  font-size: 21px;
+  font-family: 'alegreya_sansregular';
+  margin-bottom: 35px;
+}
+

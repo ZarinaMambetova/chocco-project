@@ -1,0 +1,29 @@
+.data__list {
+  display: flex;
+
+}
+
+.data__item {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+
+}
+
+.data__img {
+  display: flex;
+  align-items: center;
+ width: 44px;
+ margin-right: 6px;
+
+}
+
+ .data__icon {
+    width: 100%;
+ }
+
+.data__text {
+  font-size: 16px;
+  font-family: 'alegreya_sansregular';
+      width: 98px;
+}
