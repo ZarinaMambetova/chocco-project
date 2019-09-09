@@ -262,7 +262,7 @@ a {
 
 .we:after {
   content: "";
-  background: url("../../img/bg/berry3.png") center center/cover no-repeat;
+  background: url("../img/bg/berry3.png") center center/cover no-repeat;
   width: 200px;
   height: 385px;
   position: absolute;
