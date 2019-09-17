@@ -1,0 +1,103 @@
+.team {
+    background: url('../../img/bg/team-bg.png') 50% 50% no-repeat;
+    min-height: 650px;
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+
+.team__container {
+display: flex;
+flex-direction: column;
+}
+
+.team:after {
+    content: "";
+    background: url('../img/bg/berry-team.png') center center / cover no-repeat;
+    width: 105px;
+    height: 115px;
+    position: absolute;
+    bottom: -27px;
+    z-index: 999;
+    left: 15px;
+
+}
+
+.team__list {
+    display: flex; 
+}
+
+.team__info {
+    text-align: center;
+   
+
+}
+
+.team__desc {
+     height: 0;
+     transition: 0.5s;
+}
+.team__desc-active {
+    height: 70px;
+}
+.team__item {
+    margin-right: 20px;
+    position: relative;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.team__photo {
+ margin-bottom: 20px;
+}
+
+.team__link { 
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.team__name:before {
+    border-top: 0.4375rem solid #0f5a47;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-bottom: 0rem solid transparent;
+    transform: rotate(0deg);
+    transition: .3s; 
+}
+
+.team__name:after {
+    display: none;
+       border-bottom: 0.4375rem solid #0f5a47;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0rem solid transparent;
+}
+.team__name {
+    font-family: 'alegreya_sans_mediumregular';
+    font-size: 20px;
+    color: #000;
+}
+
+.team__name:before, .team__name:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 92px;
+    width: 0;
+    height: 0;
+}
+
+.team__item_active .team__name:before {
+    transform: rotate(-180deg);
+}
+
+.team__posicion {
+    font-family: 'alegreya_sansregular';
+    font-size: 18px;
+}
+
+.team__text {
+    font-family: 'alegreya_sans_lightregular';
+    font-size: 18px;
+}

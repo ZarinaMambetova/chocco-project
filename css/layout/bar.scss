@@ -7,6 +7,22 @@
   position: relative;
 }
 
+.bar:after {
+    content: "";
+    background: url('../img/bg/berry.png') center center / cover no-repeat;
+    width: 135px;
+    height: 110px;
+    position: absolute;
+    bottom: -64px;
+    z-index: 999;
+    right: 15px;
+
+}
+
+.bar__container {
+width: 940px;
+}
+
 .bar__stage {
   display: flex;
 }
@@ -33,60 +49,77 @@
 }
 
 .bar__title {
+  font-family: 'alegreya_sansbold';
+  font-size: 36px;
+  margin-bottom: 24px;
+} 
+
+.bar__subtitle {
   font-size: 18px;
   font-family: 'alegreya_sans_lightregular';
+  margin-bottom: 47px;
 }
 
 .bar__col {
   flex: 1 0 50%;
- 
-}
-
-.consist {
-  display: flex; position: relative;
- 
-  
-}
-.consist__link {
-  width: 90px;
-  height: 90px;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  transition: .5s;
-  cursor: pointer;
-  background-color: #61c4d9;
-  margin-bottom: 39px;
-
-  &:hover {
-    background-color: #00accf;
+  &:first-child {
+    margin-right: 70px;
   }
-}
+ }
 
-.consist__list {
-  width: 270px;
-  background-color: #ffffff;
-  padding: 25px 30px;
-  border-radius: 4px;
-  opacity: 0.9;
-  visibility: hidden;
-  z-index: 999;
-  transition: .5s;
-  position: absolute;
-  left: 90px;
-}
+ .bar__col-info {
+  padding-right: 50px;
+ }
 
-.consist__link:hover + .consist__list {
-  visibility: visible;
-}
 
-.consist-ingredients__item {
+.bar-feature {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 22px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin-bottom: 33px;
 }
+
+.bar-feature__item:first-child{
+  margin-right: 55px;
+}
+.bar-feature__name {
+  font-family: 'alegreya_sansregular';
+  font-size: 18px;
+}
+
+.bar-feature__desc {
+  font-family: 'alegreya_sansbold';
+  font-size: 18px;
+}
+
+.bar__cost {
+  display: flex;
+  align-items: center;
+}
+
+.bar__price {
+  font-family: 'alegreya_sans_lightregular';
+  font-size: 60px;
+  margin-right: 32px;
+}
+
+.bar__nav {
+cursor: pointer; }
+
+.bar__prev {
+position: absolute;
+background-size: contain;
+width: 29px;
+height: 15px;
+top: 50%;
+left: 40px;
+}
+
+.bar__next {
+  position: absolute;
+  background-size: contain;
+  width: 29px;
+  height: 15px;
+  top: 50%;
+  right: 40px;
+}
+
+

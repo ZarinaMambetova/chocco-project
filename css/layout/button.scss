@@ -10,3 +10,12 @@
   padding: 20px 36px;
 
 }
+
+.bar__button {
+  background-color: #0f5a47; 
+  color: #fff;
+  transition: .5s;
+  &:hover {
+    background-color: #0b4d3c; 
+  }
+}
