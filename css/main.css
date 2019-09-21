@@ -426,10 +426,14 @@ a {
   font-size: 18px;
   font-family: 'alegreya_sansregular'; }
 
-.team__title {
+.team__title, .reviews__title {
   text-align: center;
   margin-bottom: 25px;
   margin-top: 35px; }
+
+.menu__title {
+  color: white;
+  margin-top: 100px; }
 
 .bar {
   background: url("../../img/bg/bar-bg.png") 50% 50% no-repeat;
@@ -712,5 +716,174 @@ a {
 .team__text {
   font-family: 'alegreya_sans_lightregular';
   font-size: 18px; }
+
+.menu {
+  background: url("../../img/bg/bg-menu.png") 50% 50% no-repeat;
+  min-height: 650px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.menu-accord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%; }
+
+.menu-accord__title {
+  color: #ffffff;
+  font-family: 'alegreya_sans_mediumregular';
+  font-size: 48px;
+  display: inline-block;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%) translateX(-35%) rotate(-90deg);
+  -ms-transform: translateY(-50%) translateX(-35%) rotate(-90deg);
+  transform: translateY(-50%) translateX(-35%) rotate(-90deg);
+  white-space: nowrap; }
+
+.menu-accord__link {
+  width: 100px;
+  background-position-x: center; }
+
+.menu-accord__link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.menu-accord__description {
+  background-color: #2f3234;
+  opacity: 0.93;
+  overflow: hidden;
+  width: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.menu-accord__description_active {
+  overflow: visible;
+  width: 530px; }
+
+.menu-accord__text {
+  font-size: 16px;
+  color: #fff;
+  padding: 55px 30px;
+  line-height: 2;
+  opacity: 0;
+  font-family: 'alegreya_sansregular'; }
+
+.menu-accord__description_active .menu-accord__text {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s; }
+
+.menu-accord__item,
+.menu-accord__link {
+  height: 100%;
+  display: block;
+  position: relative; }
+
+.menu-accord__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.reviews {
+  position: relative; }
+
+.reviews::after {
+  content: "";
+  background: url("../img/bg/berry-rev.png") center center/cover no-repeat;
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: 18px;
+  z-index: 999;
+  right: 25px; }
+
+.reviews__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.reviews__list {
+  background: url("../../img/bg/bg-rev.png") 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 940px;
+  height: 340px;
+  padding: 50px;
+  margin-bottom: 20px; }
+
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  position: absolute; }
+  .reviews__item-active {
+    opacity: 1; }
+
+.reviews__photo {
+  margin-right: 20px; }
+
+.reviews__image {
+  width: 260px;
+  height: 260px; }
+
+.reviews__topic {
+  font-family: 'alegreya_sans_mediumregular';
+  font-size: 30px;
+  margin-bottom: 30px; }
+
+.reviews__text {
+  margin-bottom: 35px;
+  width: 460px; }
+
+.reviews__name {
+  font-family: 'alegreya_sans_mediumregular';
+  font-size: 18px; }
+
+.reviews-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.reviews-nav__item {
+  margin-right: 14px; }
+  .reviews-nav__item:last-child {
+    margin-right: 0; }
+
+.reviews-nav__link {
+  width: 100%;
+  height: 100%; }
+
+.reviews-nav__img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%; }
+  .reviews-nav__img-active {
+    border: 7px solid #0f5a47; }
 
 /*# sourceMappingURL=main.css.map */
