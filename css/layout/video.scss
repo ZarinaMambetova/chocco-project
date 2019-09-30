@@ -1,0 +1,24 @@
+.video__container {
+  display: flex;
+ flex-direction: column;
+
+} 
+
+.video {
+  position: relative;
+  background: url('../../img/bg/bg-video.png') 50% 50% no-repeat;
+  min-height: 650px;
+  background-size: cover;
+}
+
+.video:after {
+  content: "";
+  background: url('../img/bg/leave-video.png') center center / cover no-repeat;
+  width: 140px;
+  height: 321px;
+  position: absolute;
+  top: -175px;
+  z-index: 999;
+  left: 0;
+}
+

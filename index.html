@@ -471,24 +471,84 @@
                 </a>
               </li>
             </ul>
-
-
         </div>
       </section>
       <section class="video">
-        <div class="container">
+        <div class="container video__container">
+            <h2 class="title video__title">Как мы работаем</h2>
 
         </div>
       </section>
-      <section class="form">
-        <div class="container">
-
+      <section class="order">
+        <div class="container order__container">
+          <h2 class="title form__title">Закажите доставку</h2>
+          <div class="form">
+            <form action="" class="form__elem">
+              <div class="form__column">
+                <div class="form__row">
+                  <label for="name" class="form__block">
+                    <div class="form__block-title">Имя</div>
+                    <input type="text" name="name" class="form__input">
+                  </label>
+                  <label for="phone" class="form__block">
+                    <div class="form__block-title">Телефон</div>
+                    <input type="text" name="phone" class="form__input">
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label for="street" class="form__block">
+                    <div class="form__block-title">Улица</div>
+                    <input type="text" name="street" class="form__input">
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label for="house" class="form__block">
+                    <div class="form__block-title">Дом</div>
+                    <input type="text" name="house" class="form__input">
+                  </label>
+                  <label for="block" class="form__block">
+                    <div class="form__block-title">Корпус</div>
+                    <input type="text" name="block" class="form__input">
+                  </label>
+                  <label for="room" class="form__block">
+                    <div class="form__block-title">Квартира</div>
+                    <input type="text" name="room" class="form__input">
+                  </label>
+                  <label for="et" class="form__block">
+                    <div class="form__block-title">Этаж</div>
+                    <input type="text" name="et" class="form__input">
+                  </label>
+                </div>
+              </div>
+              <div class="form__column">
+                <div class="form__row form__row-textarea">
+                  <label for="comment" class="form__block">
+                      <div class="form__block-title">Комментарий</div>
+                      <textarea name="comment" class="form__input form__input-textarea"></textarea>
+                  </label>
+                </div> 
+                <div class="form__row">
+                  <div class="form__row form__row_radio">
+                      <input type="radio" name="review" value="сash" id="сash">
+                      <label for="сash" class="form__block form__block-title form__block-title_radio">Потребуется сдача</label>
+                  </div>
+                  <div class="form__row form__row_radio">
+                      <input type="radio" name="review" value="kard" id="kard" checked>
+                      <label for="kard" class="form__block form__block-title form__block-title_radio">Оплата по карте</label>
+                  </div>
+                </div>
+                <div class="form__row">
+                    <input type="checkbox" value="call_no" id="call_no" name="call" class="form__checkbox">
+                    <label for="call_no" class="form__block-title form__block-title_checkbox">Не перезванивать</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          
         </div>
       </section>
       <section class="contacts">
-        <div class="container">
 
-        </div>
       </section>
     </div>
     <nav class="onepage-pagination">
